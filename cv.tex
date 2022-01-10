@@ -62,8 +62,11 @@
 \newcommand\cellwidth{\TX@col@width}
 \makeatother
 
-\usepackage[backend=biber,maxnames=999,style=phys]{biblatex}
-\addbibresource{mypubs.bib}
+\usepackage[backend=biber,maxnames=999,style=phys,isbn=true]{biblatex}
+\addbibresource{export.bib}
+
+\AtEveryBibitem{\clearfield{issn}}
+\AtEveryCitekey{\clearfield{issn}}
 
 %https://tex.stackexchange.com/questions/274436/highlight-an-author-in-bibliography-using-biblatex-allowing-bibliography-style-t
 \usepackage{xpatch}
@@ -162,12 +165,50 @@
 \par{\centering{\Large \textsc{Curriculum Vitae}}\bigskip\par}
 
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lr}
-\textsc{Email:} \href{mailto:mbovyn@uci.edu}{mbovyn@uci.edu} &
-\textsc{Lab Address:} 2302 Natural Sciences I \\
-\textsc{Lab Phone:} (949)824-3038 &
-Irvine CA, 92697-2300
+\textsc{Email:} \href{mailto:bovyn@mpi-cbg.de}{bovyn@mpi-cbg.de} &
+\textsc{Office Address:} Pfotenhauerstr. 108\hphantom{0107}\\
+ &
+01307 Dresden, Germany
 
 \end{tabular*}
+
+\bigskip
+
+%overview
+
+\def \poswidth{\widthof{BSE Mechanical Engineering}}
+
+\begin{tabularx}{\textwidth}{p{\poswidth} | p{.5\textwidth}}
+
+ELBE Postdoctoral Fellow & 
+\begin{minipage}{.5\textwidth}
+Max Planck Institute for Physics of Complex Systems\\
+Max Planck Institute for Cell Biology and Genetics\\
+Center for Systems Biology Dresden
+\end{minipage}
+\end{tabularx}
+
+\vspace{-3ex}
+
+\begin{tabularx}{\textwidth}{p{\poswidth} | p{.5\textwidth}}
+\begin{minipage}{\widthof{PhD Physics}}
+PhD Physics
+MS Physics
+\end{minipage}
+&
+University of California, Irvine
+\end{tabularx}
+
+\vspace{-3ex}
+
+\begin{tabularx}{\textwidth}{p{\poswidth} | p{.5\textwidth}}
+\begin{minipage}{\widthof{BSE Mechanical Engineering}}
+BS Physics\\
+BSE Mechanical Engineering
+\end{minipage}
+&
+Northern Arizona University
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -176,81 +217,27 @@ Irvine CA, 92697-2300
 \section{Education}
 \bigskip
 
-%------ degrees --------
-\def \majorwidth{.125\textwidth}
-\def \uniwidth{.275\textwidth}
-\def \yearwidth{.2\textwidth}
-%\def \mywidth{10em}
-
-
-\begin{tabularx}{\textwidth}{p{.1\textwidth}@{\hskip 4pt} p{\majorwidth} | p{\uniwidth} | p{\yearwidth}}
-\begin{minipage}{.1\textwidth}
-\raggedleft
-\textsc{PhD} \\
-\textsc{MS}
-\end{minipage}
-&
-\begin{minipage}{\majorwidth}
-\raggedright
-\textsc{Physics} \\
-\textsc{Physics}
-\end{minipage}
-&
-\begin{minipage}{\uniwidth}
-\center
-University of California, Irvine
-\end{minipage}
-&
-\begin{minipage}{.2\textwidth}
-\raggedright
-2021 \\
-2019
-\end{minipage}
-\end{tabularx}
-
-\vspace{-1em}
-
-\begin{tabularx}{\textwidth}{p{.1\textwidth}@{\hskip 4pt} p{\majorwidth} | p{\uniwidth} | p{\yearwidth}}
-\begin{minipage}{.1\textwidth}
-\raggedleft
-\textsc{BS} \\
-\textsc{BSE}
-\end{minipage}
-&
-\begin{minipage}{\majorwidth}
-\raggedright
-\textsc{Physics} \\
-\textsc{Mechanical}
-\end{minipage}
-&
-\begin{minipage}{\uniwidth}
-\center
-Northern Arizona University
-\end{minipage}
-&
-\begin{minipage}{.2\textwidth}
-\raggedright
-2012\\
-2012
-\end{minipage}
-\end{tabularx}
-
-%\renewcommand{\arraystretch}{1.5}
+\textbf{Graduate}
 
 \begin{tabular}{>{\hangindent=2em}m{.5\textwidth} >{\hangindent=2em}m{.3\textwidth} r}
-\textbf{Graduate} & & \\
-Physiology Course & Marine Biological Laboratory & Summer 2018 \\ [2.5ex]
-Summer Research Program in Biomedical Sciences & University of Tsukuba, Japan & Summer 2016 \\ [1.5ex]
-Biophotonics Across Energy, Space, and Time IGERT & \multirow{3}{.5\textwidth}{University of California, Irvine\\(UCI)} & 2018-2019\\
-Chemical and Materials Physics Concentration &  & 2015-2017\\ 
-Mathematical, Computational, and Systems Biology Gateway (MCSB) &  & 2014-2015\\ [2.5ex]
-\textbf{Undergraduate} & & \\
-Research Experience for Undergraduates in Physics & University of South Florida & Summer 2012 \\ [1.5ex]
-Summer Undergraduate Research Program & University of Idaho & Summer 2011 \\ [1.5ex]
-NASA Space Grant Program & Lowell Observatory & 2009-2012 \\ [1.5ex]
-Physics \& Mechanical Engineering Majors & \multirow{3}{.3\textwidth}{Northern Arizona University\\(NAU)} & \\ 
-Math \& Physical Sciences Minors & & 2007-2012\\
-Liberal Studies Honors  & & \\ %[4ex]
+Physiology Course & Marine Biological Laboratory & Summer 2018 \\ [1ex]
+Summer Research Program in Biomedical Sciences & University of Tsukuba, Japan & Summer 2016 \\ [1ex]
+\underline{University of California, Irvine (UCI)} & & 2014-2021\\
+\multicolumn{2}{l}{\hspace{2ex}Biophotonics Across Energy, Space, and Time IGERT} & 2018-2019\\
+\multicolumn{2}{l}{\hspace{2ex}Chemical and Materials Physics Concentration} & 2015-2017\\ 
+\multicolumn{2}{l}{\hspace{2ex}Mathematical, Computational, and Systems Biology Gateway (MCSB)} & 2014-2015\\ 
+\end{tabular}
+
+\textbf{Undergraduate}
+
+\begin{tabular}{>{\hangindent=2em}m{.5\textwidth} >{\hangindent=2em}m{.3\textwidth} r}
+Research Experience for Undergraduates in Physics & University of South Florida & Summer 2012 \\ [1ex]
+Summer Undergraduate Research Program & University of Idaho & Summer 2011 \\ [1ex]
+NASA Space Grant Program & Lowell Observatory & 2009-2012 \\ [1ex]
+\underline{Northern Arizona University (NAU)} & & 2007-2012\\
+\hspace{2ex}Majors in Physics \& Mechanical Engineering & & \\ 
+\hspace{2ex}Minors in Mathematics \& Physical Sciences & & \\
+\hspace{2ex}Liberal Studies Honors & & \\ %[4ex]
 \end{tabular}
 
 \bigskip
@@ -263,6 +250,8 @@ Liberal Studies Honors  & & \\ %[4ex]
 \bigskip
 
 \begin{description}[itemsep=-1ex]
+\item \fullcite{Combs2021}
+\item \fullcite{Bovyn2021a}
 \item \fullcite{Bovyn2021}
 \item \fullcite{Bovyn2020}
 \item \fullcite{Bovyn2019a}
