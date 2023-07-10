@@ -147,6 +147,20 @@
 \usepackage{multirow}
 \usepackage{array}
 
+\newcommand{\presentation}[3]{
+\begin{minipage}{.4\textwidth}
+\textbf{#1:}\\#2
+\end{minipage}
+&
+\begin{minipage}{\cellwidth}
+\begin{description}[itemsep=.25ex,labelsep=0em]
+#3
+\end{description}
+\end{minipage} \\
+
+\multicolumn{2}{c}{} \\
+}
+
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
@@ -296,148 +310,61 @@ NASA Space Grant Program & Lowell Observatory & 2010-2011 \\ [2ex]
 
 \begin{tabularx}{\textwidth}{p{.4\textwidth} | X}
 
-
-\begin{minipage}{.4\textwidth}
-\textbf{Poster:} Hepatocyte apical bulkheads provide a mechanical means to oppose bile pressure
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Poster}{Hepatocyte apical bulkheads provide a mechanical means to oppose bile pressure}{
 \item \textsc{EMBO Workshop: Physics of living systems: From physical principles to biological function} Dresden, July 2023.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-
-\begin{minipage}{.4\textwidth}
-\textbf{Selected Talk:} Hepatocyte apical bulkheads provide a mechanical means to oppose bile pressure
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Selected Talk}{Hepatocyte apical bulkheads provide a mechanical means to oppose bile pressure}{
 \item \textsc{EMBO | EMBL Symposium: Life at the periphery: mechanobiology of the cell surface} Heidelberg, June 2023.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Poster:} Cargo binding to microtubules
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
-\item \textsc{Biophysical Society Annual Meeting} Virtual, February 2021.
+\presentation{Poster}{Cargo binding to microtubules}{
+\item \textsc{Biophysical Society Annual Meeting} Virtual, February 2021
 \item \textsc{Cell Bio} Virtual, December 2020.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Poster:} Phenotyping of neutrophil populations using deformability cytometry
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Poster}{Phenotyping of neutrophil populations using deformability cytometry}{
 \item \textsc{Biophysical Society Annual Meeting} San Diego, February 2020.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Poster:} Freedom of molecular motors in the membrane of intracellular cargos allows both fast binding and robust transport
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Poster}{Freedom of molecular motors in the membrane of intracellular cargos allows both fast binding and robust transport}{
 \item \textsc{Biophysical Society Annual Meeting} San Diego, February 2020.
 \item \textsc{Cellular Dynamics and Models} Cold Spring Harbor Laboratory, April 2019.
 \item \textsc{Gordon Research Conference on Stochastic Physics in Biology} Ventura, January 2019.
 \item \textsc{American Society for Cell Biology Annual Meeting} San Diego, December 2018.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Invited Talk:} 3D stochastic simulations of cargo transport reveal the influence of cargo and environment
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Invited Talk}{3D stochastic simulations of cargo transport reveal the influence of cargo and environment}{
 \item \textsc{Mathematics of the Cell: Mechanical and Chemical Signaling across Scales.} Banff International Research Station for Mathematical Innovation and Discovery, August 2018.
 \item \textsc{SIAM Conference on the Life Sciences}, Minneapolis, August 2018.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Talk:} Brownian dynamics simulation reveals how properties of the cargo and its environment can influence multiple motor transport
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Talk}{Brownian dynamics simulation reveals how properties of the cargo and its environment can influence multiple motor transport}{
 \item \textsc{American Physical Society March Meeting}, Los Angeles, March 2018.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Poster:} Geometry Matters for Cargos Navigating 3D Microtubule Intersections
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Poster}{Geometry Matters for Cargos Navigating 3D Microtubule Intersections}{
 \item \textsc{Biophysical Society Annual Meeting}, San Francisco, February 2018.
 \item \textsc{American Society for Cell Biology Annual Meeting}, Philadelphia, December 2017.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Poster:} Brownian dynamics simulation reveals freedom of motors in the cargo membrane can influence cargo dynamics
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Poster}{Brownian dynamics simulation reveals freedom of motors in the cargo membrane can influence cargo dynamics}{
 \item \textsc{Biophysical Society Thematic Meeting}, Taipei, June 2017.
 \item \textsc{Quantitative Cell Biology Network Workshop on Cells as Dynamical Systems.} University of California, San Francisco, May 2017.
 \item \textsc{Biophysical Society Annual Meeting}, Los Angeles, February 2016.
 \item \textsc{American Society for Cell Biology Annual Meeting}, San Diego, December 2015.
 \item \textsc{Quantitative Cell Biology Network Workshop on Cytoskeletal Mechanics.} Chicago, October 2015.
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Talk:} Driving Sodium-Potassium Pumps With An Oscillating Electric Field: Effects On Muscle Recovery
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Talk}{Driving Sodium-Potassium Pumps With An Oscillating Electric Field: Effects On Muscle Recovery}{
 \item \textsc{American Physical Society March Meeting}, Baltimore, March 2013.
 \item Won ``Outstanding Undergraduate Presenter'' Award
-\end{description}
-\end{minipage} \\
+}
 
-\multicolumn{2}{c}{} \\
-
-\begin{minipage}{.4\textwidth}
-\textbf{Talk:} Temperature Effects in the Near-IR Spectrum of CO2 Ice
-\end{minipage}
-&
-\begin{minipage}{\cellwidth}
-\begin{description}[itemsep=.25ex,labelsep=0em]
+\presentation{Talk}{Temperature Effects in the Near-IR Spectrum of CO2 Ice}{
 \item \textsc{Arizona NASA Space Grant Symposium}, Phoenix, April 2011.
-\end{description}
-\end{minipage}
+}
+
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
