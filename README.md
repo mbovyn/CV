@@ -1,6 +1,6 @@
 # CV
-My curriculum vitae
+My curriculum vitae.
 
-Template from https://www.latextemplates.com/template/plasmati-graduate-cv
+To see the rendered .pdf, [click this link](cv.pdf)!
 
-Compile with XeLaTeX
+Template from [here](https://www.latextemplates.com/template/plasmati-graduate-cv).
